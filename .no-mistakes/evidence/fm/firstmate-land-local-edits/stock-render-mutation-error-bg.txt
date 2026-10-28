@@ -1,0 +1,5 @@
+Error: fm_branch_outcomes lost stock argument rendering: {"args":{},"expanded":false,"phase":"error","width":40}
+    at file:///tmp/fm-pi-branch-extension.Rqlytb/stock-render-consumers/[eval1]:63:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v24.21.0: expected exit 0, got 1
