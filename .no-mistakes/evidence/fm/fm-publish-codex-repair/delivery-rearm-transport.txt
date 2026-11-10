@@ -1,0 +1,35 @@
+Real codex-cli 0.167.0, embedded TUI, private 50x180 PTY, synthetic loopback Responses provider: delivery-rearm.
+SUPERVISION OPERATING INSTRUCTIONS - primary harness: codex
+Mode: Codex asynchronous Stop-hook-owned supervision.
+Firstmate watcher wake: check: {run-worktree}/.test-tmp/native-final/delivery-rearm/home/state/lab.check.sh: LAB_ACTIONABLE_WAKE_1
+Run bin/fm-wake-drain.sh first. Handle every presented wake, open decision and unread status, then run its exact WAKE_ACK_REQUIRED command. The next Stop re-arms automatically; do not run a foreground checkpoint.
+{"type": "function_call", "id": "fc_01a1c543-82db-7843-81ae-075da116f48c", "name": "exec_command", "arguments": "{\"cmd\": \"bash ./consume.sh\", \"workdir\": \"{run-worktree}/.test-tmp/native-final/delivery-rearm/home\", \"login\": false}", "call_id": "call_3"}
+{"type": "function_call_output", "id": "fco_01a1c543-8714-7433-a0e5-cfc753317d15", "call_id": "call_3", "output": "Chunk ID: a737f7\nWall time: 0.8612 seconds\nProcess exited with code 0\nOriginal token count: 0\nOutput:\n"}
+Firstmate watcher wake: check: {run-worktree}/.test-tmp/native-final/delivery-rearm/home/state/lab.check.sh: LAB_ACTIONABLE_WAKE_2
+Run bin/fm-wake-drain.sh first. Handle every presented wake, open decision and unread status, then run its exact WAKE_ACK_REQUIRED command. The next Stop re-arms automatically; do not run a foreground checkpoint.
+{"type": "function_call", "id": "fc_01a1c543-a9ef-72c2-baa9-9d2d34639671", "name": "exec_command", "arguments": "{\"cmd\": \"bash ./consume.sh\", \"workdir\": \"{run-worktree}/.test-tmp/native-final/delivery-rearm/home\", \"login\": false}", "call_id": "call_6"}
+{"type": "function_call_output", "id": "fco_01a1c543-ae46-78b1-8ea3-73646bc3b97c", "call_id": "call_6", "output": "Chunk ID: 7e1a68\nWall time: 0.9021 seconds\nProcess exited with code 0\nOriginal token count: 0\nOutput:\n"}
+
+drains.log
+1794310888	1	check	{run-worktree}/.test-tmp/native-final/delivery-rearm/home/state/lab.check.sh	check: {run-worktree}/.test-tmp/native-final/delivery-rearm/home/state/lab.check.sh: LAB_ACTIONABLE_WAKE_1
+WAKE_ACK_REQUIRED: after handling completes run bin/fm-wake-drain.sh --ack-through 1 --recovery-generation 701645.1794310888.Dpm3eB
+WARNING: queued wakes pending - drain them with bin/fm-wake-drain.sh before anything else.
+1794310900	2	check	{run-worktree}/.test-tmp/native-final/delivery-rearm/home/state/lab.check.sh	check: {run-worktree}/.test-tmp/native-final/delivery-rearm/home/state/lab.check.sh: LAB_ACTIONABLE_WAKE_2
+WAKE_ACK_REQUIRED: after handling completes run bin/fm-wake-drain.sh --ack-through 2 --recovery-generation 704700.1794310900.C6sk11
+WARNING: queued wakes pending - drain them with bin/fm-wake-drain.sh before anything else.
+
+
+consumed.log
+consumed
+consumed
+
+
+state/.codex-park.json
+{
+  "session": "01a1c543-38c4-7103-b0e2-86b223ec7498",
+  "identity": "linux-starttime=1828476 cmdline-hex=62617368002f686f6d652f656c6974652f2e6e6f2d6d697374616b65732f776f726b74726565732f3261386536626331316165612f30314d37324a5856363946545a534a33595a4435455345394b5a2f2e746573742d746d702f6e61746976652d66696e616c2f64656c69766572792d726561726d2f686f6d652f62696e2f666d2d636f6465782d73746f702d7061726b2e736800",
+  "anchor": "697680",
+  "pid": 706443,
+  "at": 1794310909,
+  "outcome": "waiting"
+}

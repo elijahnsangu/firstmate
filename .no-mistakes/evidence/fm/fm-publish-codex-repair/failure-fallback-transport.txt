@@ -1,0 +1,20 @@
+Real codex-cli 0.167.0, embedded TUI, private 50x180 PTY, synthetic loopback Responses provider: failure-fallback.
+SUPERVISION OPERATING INSTRUCTIONS - primary harness: codex
+Mode: Codex asynchronous Stop-hook-owned supervision.
+Firstmate Codex park failed (arm exit 1, attempt 1/2). Drain first and inspect state/.codex-park.json. Automatic recovery retries once; a repeated failure selects the bounded foreground checkpoint protocol.
+<hook_prompt hook_run_id="stop:3:{run-worktree}/.test-tmp/native-final/failure-fallback/home/.codex/hooks.json">Codex watcher park is in foreground fallback after a failure; inspect state/.codex-park.json and resume bounded foreground checkpoints.</hook_prompt>
+Firstmate Codex park failed (arm exit 1, attempt 2/2). Drain first and inspect state/.codex-park.json. Automatic recovery retries once; a repeated failure selects the bounded foreground checkpoint protocol.
+
+state/.codex-park.json
+{
+  "session": "01a1c543-bd37-7b70-8de9-a083d8ef5055",
+  "identity": "linux-starttime=1829345 cmdline-hex=62617368002f686f6d652f656c6974652f2e6e6f2d6d697374616b65732f776f726b74726565732f3261386536626331316165612f30314d37324a5856363946545a534a33595a4435455345394b5a2f2e746573742d746d702f6e61746976652d66696e616c2f6661696c7572652d66616c6c6261636b2f686f6d652f62696e2f666d2d636f6465782d73746f702d7061726b2e736800",
+  "anchor": "707596",
+  "pid": 710777,
+  "at": 1794310920,
+  "outcome": "failed"
+}
+
+
+state/.codex-park-fallback
+01a1c543-bd37-7b70-8de9-a083d8ef5055

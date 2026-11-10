@@ -1,0 +1,1 @@
+codex-cli 0.164.0: native startup retained codex identity; no asynchronous park protocol, registration or park record; normal /quit requested.
